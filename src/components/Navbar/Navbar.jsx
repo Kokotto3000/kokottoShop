@@ -5,6 +5,7 @@ import { ShoppingCart } from '@material-ui/icons';
 import logo from '../../assets/kokottoshop.png';
 import useStyles from './styles';
 
+// les articles sont persistants dans le panier même si on ferme l'application grâce à l'API
 const Navbar = ({ totalItems }) => {
     const classes= useStyles();
     
