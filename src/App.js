@@ -36,7 +36,7 @@ const App= ()=> {
     // console.log(products);
     // Array [ {…} ]
 
-    console.log(cart);
+    // console.log(cart);
 
     return (
         <div>
