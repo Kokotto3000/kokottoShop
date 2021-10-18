@@ -7,7 +7,7 @@ import { commerce } from './lib/commerce';
 // import Navbar from "./components/Products/Navbar/Navbar";
 // grâce au index.js de componetnts on peut tout importer d'un coup
 
-import {Products, Navbar, Cart} from './components';
+import {Products, Navbar, Cart, Checkout } from './components';
 
 // pour la navigation !
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -74,6 +74,9 @@ const App= ()=> {
                             handleRemoveFromCart={handleRemoveFromCart} 
                             handleEmptyCart={handleEmptyCart} 
                         />
+                    </Route>
+                    <Route exact path="/checkout">
+                        <Checkout />
                     </Route>
                 </Switch>   
             </div>
